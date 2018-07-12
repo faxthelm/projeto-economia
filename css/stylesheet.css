@@ -37,6 +37,7 @@ body{
 .header-menu-pages li:hover{
     color: #5f6268;
     border-bottom:3px solid #5f6268;
+    cursor: pointer;
 }
 
 /* MENU OPTIONS */
@@ -69,6 +70,7 @@ body{
 
 .options-menu li:hover{
     background-color: #5fb8d3;
+    cursor: pointer;
 }
 
 /* CONTENT */
@@ -91,6 +93,7 @@ body{
 .content-text p{
     font-size: 15px;
     padding: 10px;
+    color: #5f6268;
 }
 
 .content-economy{
@@ -106,5 +109,75 @@ body{
 
 .content-economy p{
     color: #5f6268;
+    text-align: justify;
+}
+
+#content-image {
+    margin-top: 40px;
+}
+
+/* MACROECONOMIA */
+/* Controle Precos */
+.esquerda{
+    float: left;
+    width: 48%;
+    height: 540px;
+}
+
+.esquerda h1{
+    color: #5fb8d3;
+}
+
+.esquerda h2,p{
+    color: #5f6268;
+}
+
+
+.direita{
+    float: right;
+    width: 50%;
+    height: 540px;
+}
+
+.texto-esquerda{
+    text-align: justify;
+}
+
+.escolhe-precos{
+    padding-top: 20px;
+}
+
+.escolhe-precos h4{
+    color: #5f6268;
+}
+
+.graficos{
+    padding-top: 10px;
+}
+
+.menu-opcoes{
+    list-style: none;
+}
+
+.opcao{
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.opcao button{
+    background-color:#5fb8d3;
+    color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #5f6268;
+    margin-left: 10px;
+}
+
+.opcao button:hover{
+    background-color: #5f6268;
+    cursor: pointer;
+}
+
+#explicacao{
     text-align: justify;
 }
