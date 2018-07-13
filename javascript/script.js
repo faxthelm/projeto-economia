@@ -1,12 +1,12 @@
 /* Objetos: Macroeconomia e Microeconomia */
 var macroeconomia = {
-			conceito1: "Introdução à Macroeconomia", 
-			conceito2: "Controle de Preços", 
+			conceito1: "Introdução à Macroeconomia",
+			conceito2: "Controle de Preços",
 			conceito3: "Conceito 3"
 		};
 var microeconomia = {
-			conceito1: "Introdução à Microeconomia", 
-			conceito2: "Conceito 2", 
+			conceito1: "Introdução à Microeconomia",
+			conceito2: "Conceito 2",
 			conceito3: "Conceito 3"
 		};
 
@@ -47,7 +47,7 @@ function alterOptionsMacroEconomia(){
 }
 
 function createOptionsMenuMacro(){
-	document.getElementById('options').innerHTML = '<ul class="options-menu"> <li id="option1" onclick="alterContentTextMacro()"></li> <li id="option2" onclick="controlePrecos()"></li> <li id="option3"></li></ul>';
+	document.getElementById('options').innerHTML = '<ul class="options-menu"> <li id="option1" onclick="alterContentTextMacro()"></li> <li id="option2" onclick="controlePrecos()"></li> <li id="option3" onclick="ofertaDemanda()"></li></ul>';
 }
 
 function createOptionsMenuMicro(){

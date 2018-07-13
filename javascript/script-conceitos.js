@@ -23,12 +23,12 @@ function controlePrecos() {
                         + '<p class="texto-esquerda">Entretanto nem todos estão felizes com esse preço e a Associação de Consumidores de Computadores reclamou, dizendo que é um preço muito elevado para qu todos possam ter acesso a esse bem. Esse grupo fez <i>lobby</i> no governo para que os legisladores aprovem leis que alterem o mercado  por meio de uma política de controle direto de preços.</p>'
                         + '<p class="texto-esquerda">Portanto você é um legislador e tem como objetivo estabelecer um preçio máximo para o computador.</p>'
 
-                        
+
 
                     + "</span>"
 
                     + '<span class="direita">'
-                    
+
                        + '<span class="escolhe-precos">'
                             + "<h4>Escolha o máximo preço que pode ser vendido um computador:</h3>"
                             + '<ul class="menu-opcoes">'
@@ -41,12 +41,101 @@ function controlePrecos() {
                            + '<img id="grafico" width="410px" height="350px" src="img/graficos/grafico1.png">'
                             + '<p id="explicacao">Neste caso o preço máximo é igual ao preço de equilíbrio. As forças de mercado já estão se movendo dentro dessa faixa, portanto esse preço máximo não exerce efeito sobre a quantidade vendida.</p>'
                         + "</span>"
-                        
+
                     + "</span>"
                    + "<br>"
                     + "<span>"
                         + "<p>Fonte: Mankiw G. Introdução a Economia  </p>"
                     + "<span>"
-                    
+
             + "</div>";
+}
+
+function ofertaDemanda(){
+	document.getElementById('content').innerHTML = '<div id = "segundo-conceito" class = "segundo-conceito">'
+                    +'<span class= "esquerda">'
+                        + "<h1>Modelo Clássico de Oferta e Demanda</h1>"
+                        + "<h2>O modelo clássico considera que:</h2>"
+                        + '<p class="texto-esquerda">Há completa flexibilidade de preços e salários, isto é, se igualam a oferta e a procura de mão-de-obra.</p>'
+                        + '<p class="texto-esquerda">As variáveis reais, bem como os preços relativos, não são afetadas pela política monetária. Ou seja, como o nível de atividade e de emprego está determinado automaticamente pelas forças de mercado, a quantidade de moeda afeta apenas o nível geral de preços.</p>'
+                        + '<p class="texto-esquerda">A demanda agregada não é um fator determinante do nível de produto. É válida a Lei de Say: “a oferta cria sua própria procura”.</p>'
+
+
+
+                    + "</span>"
+
+                    + '<span class="direita">'
+
+                       + '<span class="escolhe-precos">'
+                            + '<h4 id="titulo">Oferta agregada clássica:</h3>'
+                            + '<ul class="menu-opcoes">'
+                                + '<li class="opcao"><button onclick="oferta()">Oferta</button></li>'
+                                + '<li class="opcao"><button onclick="demanda()">Demanda</button></li>'
+                            + "</ul>"
+														+'<div id="conteudoDireita">'
+														+'<p>A oferta agregada corresponde ao total de produto que as empresas e famílias estão dispostas a oferecer em um determinado período de tempo, a um determinado padrão de preços. A oferta agregada diz qual será o produto ofertado, a quantidade de produção que será fornecida pelas empresas em conjunto, para cada nível de preços. A existência de um grande número de empresas tira o poder de cada uma delas de influir nas condições de mercado, ou seja, afetar os preços. Para deduzir a oferta agregada é necessário analisar como se determina o nível de produção para cada empresa individual, e por agregação, obtê-la para a economia como um todo. A função de produção retrata a relação entre quantidade produzida e a utilização de fatores de produção com uma dada tecnologia: Y = F (K, N, T), onde:</p>'
+														+'<ul>'
+														+'<li>Y = produto;</li>'
+														+'<li>K = estoque de capital utilizado;</li>'
+														+'<li>N = quantidade de trabalho (horas-trabalho) utilizada;</li>'
+														+'<li>T = nível tecnológico</li>'
+														+ '</ul>'
+														+'<p>Todas definidas num dado período de tempo</p>'
+														+'<p>A função de produção apresenta o máximo de produto que pode ser obtido para uma dada combinação de fatores, considerando que não haja desperdícios.</p>'+'<p>Considerando um mercado do tipo concorrência perfeita, isto é, um grande número de empresas, que não conseguem afetar o preço dos produtos que vendem e o preço dos fatores de produção. O lucro das empresas corresponde à diferença entre suas receitas com a venda da produção e os custos para gerar o produto.</p>'
+														+'<p>Lucro = Receita Total - Custo Total</p>'
+														+'<p>Lucro = PY - (WN + RK), onde:</p>'
+														+'<ul>'
+														+'<li>W = salário nominal por unidade de trabalho N,</li>'
+														+'<li>R = custo por unidade de capital K,</li>'
+														+'<li>P = preço do produto Y.</li>'
+														+'</ul>'
+														+'<p>Como o produto (Y) é função da utilização de trabalho, têm-se: Lucro = P F (N) - WN - RK</p>'
+														+'<p>Por ser um mercado de concorrência perfeita, as empresas não decidem sobre o preço que vendem seus produtos ou sobre o salário que pagarão ao trabalho. Sua decisão restringe a quantidade de mão-de-obra (N) contratará e quanto irá produzir, de modo a obter lucro máximo.</p>'
+														+'</div>'
+                        + "</span>"
+
+                    + "</span>"
+                   + "<br>"
+                    + "<span>"
+                        + "<p>Fonte: Mankiw G. Introdução a Economia  </p>"
+                    + "<span>"
+
+            + "</div>";
+}
+
+function oferta(){
+	document.getElementById('titulo').innerHTML = "Oferta agregada clássica:"
+	document.getElementById('conteudoDireita').innerHTML ='<p>A oferta agregada corresponde ao total de produto que as empresas e famílias estão dispostas a oferecer em um determinado período de tempo, a um determinado padrão de preços. A oferta agregada diz qual será o produto ofertado, a quantidade de produção que será fornecida pelas empresas em conjunto, para cada nível de preços. A existência de um grande número de empresas tira o poder de cada uma delas de influir nas condições de mercado, ou seja, afetar os preços. Para deduzir a oferta agregada é necessário analisar como se determina o nível de produção para cada empresa individual, e por agregação, obtê-la para a economia como um todo. A função de produção retrata a relação entre quantidade produzida e a utilização de fatores de produção com uma dada tecnologia: Y = F (K, N, T), onde:</p>'
+	+'<ul>'
+	+'<li>Y = produto;</li>'
+	+'<li>K = estoque de capital utilizado;</li>'
+	+'<li>N = quantidade de trabalho (horas-trabalho) utilizada;</li>'
+	+'<li>T = nível tecnológico</li>'
+	+ '</ul>'
+	+'<p>Todas definidas num dado período de tempo</p>'
+	+'<p>A função de produção apresenta o máximo de produto que pode ser obtido para uma dada combinação de fatores, considerando que não haja desperdícios.</p>'+'<p>Considerando um mercado do tipo concorrência perfeita, isto é, um grande número de empresas, que não conseguem afetar o preço dos produtos que vendem e o preço dos fatores de produção. O lucro das empresas corresponde à diferença entre suas receitas com a venda da produção e os custos para gerar o produto.</p>'
+	+'<p>Lucro = Receita Total - Custo Total</p>'
+	+'<p>Lucro = PY - (WN + RK), onde:</p>'
+	+'<ul>'
+	+'<li>W = salário nominal por unidade de trabalho N,</li>'
+	+'<li>R = custo por unidade de capital K,</li>'
+	+'<li>P = preço do produto Y.</li>'
+	+'</ul>'
+	+'<p>Como o produto (Y) é função da utilização de trabalho, têm-se: Lucro = P F (N) - WN - RK</p>'
+	+'<p>Por ser um mercado de concorrência perfeita, as empresas não decidem sobre o preço que vendem seus produtos ou sobre o salário que pagarão ao trabalho. Sua decisão restringe a quantidade de mão-de-obra (N) contratará e quanto irá produzir, de modo a obter lucro máximo.</p>'
+}
+function demanda(){
+	document.getElementById('titulo').innerHTML = "Demanda agregada clássica:"
+	document.getElementById('conteudoDireita').innerHTML ='<p>A demanda agregada é a relação entre a quantidade demandada de bens e serviços e o nível geral de preços. Com essa definição, é possível derivar a demanda agregada no modelo clássico com base na teoria quantitativa da moeda.</p>'
+	+'<p>Tem-se:  MV = PY, onde:</p>'
+	+'<ul>'
+	+'<li>M = quantidade de moeda;</li>'
+	+'<li>V = velocidade-renda da moeda;</li>'
+	+'<li>P = nível geral de preços;</li>'
+	+'<li>Y = renda ou produto real (PY então é o produto nominal ou monetário).</li>'
+	+'</ul>'
+	+'<p>Esta teoria é vista como uma equação de equilíbrio do mercado monetário, mostra que a oferta de moeda é igual à demanda de moeda e que a demanda é proporcional à quantidade do produto real Y. A demanda agregada não é um fator determinante do nível de produto da economia. São as condições de oferta que determinam o nível de produto.</p>'
+	+'<p>Se o produto real é dado pela oferta, a única variável determinada pela demanda é o nível de preços.</p>'
+	+'<p>Como a posição da curva de demanda é determinada pela oferta de moeda, é possível concluir que, no modelo clássico, políticas monetárias expansionistas ampliam a demanda e, como a oferta é dada pelas condições reais, as únicas variáveis afetadas pela moeda são as nominais (preços).</p>'
+	+'<p>Dado a oferta de moeda e o nível de produto definido pela oferta agregada, a demanda agregada apenas determina o nível de preços da economia. Alterações na demanda agregada, em decorrência de alterações na oferta de moeda, apenas mudam o nível de preços da economia, sem qualquer impacto sobre o produto real.</p>'
 }
