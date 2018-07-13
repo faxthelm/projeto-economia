@@ -1,13 +1,13 @@
 /* Objetos: Macroeconomia e Microeconomia */
 var macroeconomia = {
-			conceito1: "Introdução à Macroeconomia",
-			conceito2: "Controle de Preços",
-			conceito3: "Conceito 3"
+			introducao: "Introdução à Macroeconomia",
+			conceito1: "Controle de Preços",
+			conceito2: "Oferta e Demanda"
 		};
 var microeconomia = {
-			conceito1: "Introdução à Microeconomia",
-			conceito2: "Conceito 2",
-			conceito3: "Conceito 3"
+			introducao: "Introdução à Microeconomia",
+			conceito1: "Elasticidade",
+			conceito2: "Conceito 3"
 		};
 
 /* Hearder - Menu - Página inicial; Macroeconomia; Microeconomia */
@@ -34,16 +34,16 @@ function alterOptions(){
 
 function alterOptionsMicroEconomia(){
 	createOptionsMenuMicro();
-	document.getElementById("option1").innerHTML = microeconomia.conceito1;
-	document.getElementById("option2").innerHTML = microeconomia.conceito2;
-	document.getElementById("option3").innerHTML = microeconomia.conceito3;
+	document.getElementById("option1").innerHTML = microeconomia.introducao;
+	document.getElementById("option2").innerHTML = microeconomia.conceito1;
+	document.getElementById("option3").innerHTML = microeconomia.conceito2;
 }
 
 function alterOptionsMacroEconomia(){
 	createOptionsMenuMacro();
-	document.getElementById("option1").innerHTML = macroeconomia.conceito1;
-	document.getElementById("option2").innerHTML = macroeconomia.conceito2;
-	document.getElementById("option3").innerHTML = macroeconomia.conceito3;
+	document.getElementById("option1").innerHTML = macroeconomia.introducao;
+	document.getElementById("option2").innerHTML = macroeconomia.conceito1;
+	document.getElementById("option3").innerHTML = macroeconomia.conceito2;
 }
 
 function createOptionsMenuMacro(){
@@ -51,7 +51,7 @@ function createOptionsMenuMacro(){
 }
 
 function createOptionsMenuMicro(){
-	document.getElementById('options').innerHTML = '<ul class="options-menu"> <li id="option1" onclick="alterContentTextMicro()"></li> <li id="option2"></li> <li id="option3"></li></ul>';
+	document.getElementById('options').innerHTML = '<ul class="options-menu"> <li id="option1" onclick="alterContentTextMicro()"></li> <li id="option2" onclick="elasticidade()"></li> <li id="option3"></li></ul>';
 }
 
 /* alterar conteudo bloco principal */
