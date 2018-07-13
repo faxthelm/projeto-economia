@@ -32,7 +32,7 @@ function controlePrecos() {
                     + '<span class="direita">'
 
                        + '<span class="escolhe-precos">'
-                            + "<h4>Escolha o máximo preço que pode ser vendido um computador:</h3>"
+                            + "<h4>Escolha o máximo preço que pode ser vendido um computador:</h4>"
                             + '<ul class="menu-opcoes">'
                                 + '<li class="opcao"><button onclick="explicaGrafico2()">R$ 1.200,00</button></li>'
                                 + '<li class="opcao"><button onclick="explicaGrafico2()">R$ 1.100,00</button></li>'
@@ -69,7 +69,7 @@ function ofertaDemanda(){
                     + '<span class="direita">'
 
                        + '<span class="escolhe-precos">'
-                            + '<h4 id="titulo">Oferta agregada clássica:</h3>'
+                            + '<h4 id="titulo">Oferta agregada clássica:</h4>'
                             + '<ul class="menu-opcoes">'
                                 + '<li class="opcao"><button onclick="oferta()">Oferta</button></li>'
                                 + '<li class="opcao"><button onclick="demanda()">Demanda</button></li>'
@@ -177,7 +177,7 @@ function elasticidade() {
                     + '<span class="direita">'
 
                        + '<span class="escolhe-precos">'
-                            + "<h4>Calculando a Elasticidade-Preço da Demanda:</h3>"
+                            + "<h4>Calculando a Elasticidade-Preço da Demanda:</h4>"
                             + '<p>Fórmula: <b>EPD = VPQD / VPP</b></p>'
                             + '<p>Legenda:</p>'
                             + '<p>&nbsp&nbsp&nbsp&nbsp<b>EDP: </b>Elasticidade-Preço Demanda</p>'
@@ -195,4 +195,70 @@ function elasticidade() {
                     + '</div>';
 
 
+}
+
+function receitaTotal(){
+	document.getElementById('content').innerHTML = '<div id = "segundo-conceito" class = "segundo-conceito">'
+										+'<span class= "esquerda">'
+												+ "<h1>Receita Total</h1>"
+												+ '<p class="texto-esquerda">Ao estudarmos as mudanças da oferta ou da demanda em um mercado, uma variável que normalmente desejamos calcular é a receita total: “a quantia paga pelos compradores e recebida pelos vendedores de um bem”. Em qualquer mercado, a receita total é calculada como o produto do preço pela quantidade total vendida do bem em questão, ou a área do retângulo como no gráfico abaixo.</p>'
+												+ '<img src="img/receitatotal1.jpg"></img>'
+												+ '<p class="texto-esquerda">Como a receita total varia à medida que nos movemos ao longo da curva de demanda? A resposta depende da elasticidade preço da demanda ja vista no outro tópico sobre microeconomia.</p>'
+
+
+
+										+ "</span>"
+
+										+ '<span class="direita">'
+
+											 + '<span class="escolhe-precos">'
+														+ '<h4 id="tituloReceita">Demanda Inelástica:</h4>'
+														+ '<ul class="menu-opcoes">'
+																+ '<li class="opcao"><button onclick="demandaInelastica()">Demanda Inelástica</button></li>'
+																+ '<li class="opcao"><button onclick="demandaElastica()">Demanda Elástica</button></li>'
+														+ "</ul>"
+														+'<div id="conteudoDireita">'
+														+'<p>Observando o gráfico abaixo um aumento no preço de $1 para $3 de um produto x, provoca uma diminuição pequena de apenas 20 unidades, até porque estamos considerando um bem de demanda inelástica. Um aumento do preço eleva a receita total porque a diminuição na quantidade é proporcionalmente inferior ao aumento no preço. </p>'
+														+'<img src="img/demanda-inelastica.jpg"></img>'
+														+'</div>'
+												+ "</span>"
+
+										+ "</span>"
+						+ "</div>";
+
+}
+
+function demandaInelastica(){
+	document.getElementById('tituloReceita').innetHTML='Demanda Inelástica:';
+	document.getElementById('conteudoDireita').innerHTML = '<p>Observando o gráfico abaixo um aumento no preço de $1 para $3 de um produto x, provoca uma diminuição pequena de apenas 20 unidades, até porque estamos considerando um bem de demanda inelástica. Um aumento do preço eleva a receita total porque a diminuição na quantidade é proporcionalmente inferior ao aumento no preço. </p>'
+	+'<img src="img/demanda-inelastica.jpg"></img>';
+}
+
+function demandaElastica(){
+	document.getElementById('conteudoDireita').innerHTML = '<p>Obtemos um resultado oposto se a demanda é elástica. Observando o gráfico abaixo considere um aumento no preço de $4 para $5 de um bem x, podemos ver que a quantidade demandada diminui de 50 para 20, até porque estamos considerando um bem cuja demanda é inelástica, que pode ter substitutos próximos ou que seja um produto supérfluo. E com isso a receita diminui de $200 para $100. Ou seja um aumento no preço reduz a receita porque a diminuição na quantidade é proporcionalmente maior que o aumento no preço.</p>'
+	+'<img src="img/demanda-elastica.jpg"></img>'
+	+'<p>Situação: calcular a elasticidade preço da demanda com o método do ponto médio</p>'
+	+'<p>Fórmula:</p>'
+	+'<p><b>EPD = { (Q2 - Q1)/[(Q2 + Q1)/2] }/ { (P2 - P1) / [(P2 + P1) / 2] }</b></p>'
+	+'<p>Resultados Possíveis:</p>'
+	+ '<span class="escolhe-precos">'
+			 + '<ul class="menu-opcoes">'
+		 			+ '<li class="opcao"><button onclick="epdMaior()">EPD > 1</button></li>'
+		 			+ '<li class="opcao"><button onclick="epdMenor()">EPD < 1</button></li>'
+		 			+ '<li class="opcao"><button onclick="epdIgual()">EPD = 1</button></li>'
+		 	+ "</ul>"
+	 + "</span>"
+	+'<p id="respostasEPD">EPD > 1 - Elasticidade elástica, logo um aumento nos preços gerará a situação descrita no segundo gráfico e a receita total diminuirá.</p>';
+}
+
+function epdMaior(){
+	document.getElementById('respostasEPD').innerHTML='EPD > 1 - Elasticidade elástica, logo um aumento nos preços gerará a situação descrita no segundo gráfico e a receita total diminuirá.'
+}
+
+function epdMenor(){
+	document.getElementById('respostasEPD').innerHTML='EPD < 1 - Elasticidade inelástica, logo um aumento nos preços gerará a situação descrita no primeiro gráfico e a receita total aumentará.'
+}
+
+function epdIgual(){
+	document.getElementById('respostasEPD').innerHTML='EPD = 1 - Elasticidade unitária, sem alteração na receita total.'
 }
