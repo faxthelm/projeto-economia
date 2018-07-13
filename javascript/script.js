@@ -59,7 +59,7 @@ function alterContentText(){
 	patternContent();
 	document.getElementById("content-title").innerHTML = "Introdução ao Projeto";
 	document.getElementById("content-text").innerHTML = "&nbsp&nbsp&nbsp&nbspEste projeto tem como objetivo apresentar conceitos relevantes compreendidos ao longo da disciplina de Economia para Computação (ACH2047). <br>"
-                + "&nbsp&nbsp&nbsp&nbspOs integrantes deste grupo são:<br>"
+                + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOs integrantes deste grupo são:<br>"
                 + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAna Paula Bruno Carbone (9761805)<br>"
                 + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBeatriz Pozzan do Santos Duarte (9779109)<br>"
                 + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFernando d'Avila Axthelm (9761805)<br>"
