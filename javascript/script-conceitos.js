@@ -105,7 +105,6 @@ function ofertaDemanda(){
             + "</div>";
 }
 
-<<<<<<< HEAD
 function oferta(){
 	document.getElementById('titulo').innerHTML = "Oferta agregada clássica:"
 	document.getElementById('conteudoDireita').innerHTML ='<p>A oferta agregada corresponde ao total de produto que as empresas e famílias estão dispostas a oferecer em um determinado período de tempo, a um determinado padrão de preços. A oferta agregada diz qual será o produto ofertado, a quantidade de produção que será fornecida pelas empresas em conjunto, para cada nível de preços. A existência de um grande número de empresas tira o poder de cada uma delas de influir nas condições de mercado, ou seja, afetar os preços. Para deduzir a oferta agregada é necessário analisar como se determina o nível de produção para cada empresa individual, e por agregação, obtê-la para a economia como um todo. A função de produção retrata a relação entre quantidade produzida e a utilização de fatores de produção com uma dada tecnologia: Y = F (K, N, T), onde:</p>'
@@ -142,7 +141,6 @@ function demanda(){
 	+'<p>Como a posição da curva de demanda é determinada pela oferta de moeda, é possível concluir que, no modelo clássico, políticas monetárias expansionistas ampliam a demanda e, como a oferta é dada pelas condições reais, as únicas variáveis afetadas pela moeda são as nominais (preços).</p>'
 	+'<p>Dado a oferta de moeda e o nível de produto definido pela oferta agregada, a demanda agregada apenas determina o nível de preços da economia. Alterações na demanda agregada, em decorrência de alterações na oferta de moeda, apenas mudam o nível de preços da economia, sem qualquer impacto sobre o produto real.</p>'
 }
-=======
 
 /* MICROECONOMIA */
 
