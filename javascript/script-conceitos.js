@@ -212,12 +212,12 @@ function receitaTotal(){
 										+ '<span class="direita">'
 
 											 + '<span class="escolhe-precos">'
-														+ '<h4 id="tituloReceita">Demanda Inelástica:</h4>'
-														+ '<ul class="menu-opcoes">'
+																+ '<ul class="menu-opcoes">'
 																+ '<li class="opcao"><button onclick="demandaInelastica()">Demanda Inelástica</button></li>'
 																+ '<li class="opcao"><button onclick="demandaElastica()">Demanda Elástica</button></li>'
 														+ "</ul>"
 														+'<div id="conteudoDireita">'
+														+'<h4 id="tituloReceita">Demanda Inelástica:</h4>'
 														+'<p>Observando o gráfico abaixo um aumento no preço de $1 para $3 de um produto x, provoca uma diminuição pequena de apenas 20 unidades, até porque estamos considerando um bem de demanda inelástica. Um aumento do preço eleva a receita total porque a diminuição na quantidade é proporcionalmente inferior ao aumento no preço. </p>'
 														+'<img src="img/demanda-inelastica.jpg"></img>'
 														+'</div>'
@@ -229,13 +229,14 @@ function receitaTotal(){
 }
 
 function demandaInelastica(){
-	document.getElementById('tituloReceita').innetHTML='Demanda Inelástica:';
-	document.getElementById('conteudoDireita').innerHTML = '<p>Observando o gráfico abaixo um aumento no preço de $1 para $3 de um produto x, provoca uma diminuição pequena de apenas 20 unidades, até porque estamos considerando um bem de demanda inelástica. Um aumento do preço eleva a receita total porque a diminuição na quantidade é proporcionalmente inferior ao aumento no preço. </p>'
+	document.getElementById('conteudoDireita').innerHTML = '<h4 id="tituloReceita">Demanda Inelástica:</h4>'
+	+'<p>Observando o gráfico abaixo um aumento no preço de $1 para $3 de um produto x, provoca uma diminuição pequena de apenas 20 unidades, até porque estamos considerando um bem de demanda inelástica. Um aumento do preço eleva a receita total porque a diminuição na quantidade é proporcionalmente inferior ao aumento no preço. </p>'
 	+'<img src="img/demanda-inelastica.jpg"></img>';
 }
 
 function demandaElastica(){
-	document.getElementById('conteudoDireita').innerHTML = '<p>Obtemos um resultado oposto se a demanda é elástica. Observando o gráfico abaixo considere um aumento no preço de $4 para $5 de um bem x, podemos ver que a quantidade demandada diminui de 50 para 20, até porque estamos considerando um bem cuja demanda é inelástica, que pode ter substitutos próximos ou que seja um produto supérfluo. E com isso a receita diminui de $200 para $100. Ou seja um aumento no preço reduz a receita porque a diminuição na quantidade é proporcionalmente maior que o aumento no preço.</p>'
+	document.getElementById('conteudoDireita').innerHTML = '<h4 id="tituloReceita">Demanda Elástica:</h4>'
+	+'<p>Obtemos um resultado oposto se a demanda é elástica. Observando o gráfico abaixo considere um aumento no preço de $4 para $5 de um bem x, podemos ver que a quantidade demandada diminui de 50 para 20, até porque estamos considerando um bem cuja demanda é inelástica, que pode ter substitutos próximos ou que seja um produto supérfluo. E com isso a receita diminui de $200 para $100. Ou seja um aumento no preço reduz a receita porque a diminuição na quantidade é proporcionalmente maior que o aumento no preço.</p>'
 	+'<img src="img/demanda-elastica.jpg"></img>'
 	+'<p>Situação: calcular a elasticidade preço da demanda com o método do ponto médio</p>'
 	+'<p>Fórmula:</p>'
