@@ -6,7 +6,7 @@ var macroeconomia = {
 		};
 var microeconomia = {
 			introducao: "Introdução à Microeconomia", 
-			conceito1: "Conceito 2", 
+			conceito1: "Elasticidade", 
 			conceito2: "Conceito 3"
 		};
 
@@ -51,7 +51,7 @@ function createOptionsMenuMacro(){
 }
 
 function createOptionsMenuMicro(){
-	document.getElementById('options').innerHTML = '<ul class="options-menu"> <li id="option1" onclick="alterContentTextMicro()"></li> <li id="option2"></li> <li id="option3"></li></ul>';
+	document.getElementById('options').innerHTML = '<ul class="options-menu"> <li id="option1" onclick="alterContentTextMicro()"></li> <li id="option2" onclick="elasticidade()"></li> <li id="option3"></li></ul>';
 }
 
 /* alterar conteudo bloco principal */
